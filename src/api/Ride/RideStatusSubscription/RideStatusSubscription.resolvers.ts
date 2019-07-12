@@ -1,0 +1,24 @@
+import { Resolvers } from "src/types/resolvers";
+import { withFilter } from "graphql-yoga";
+import User from "../../../entities/User";
+
+const resolvers: Resolvers = {
+  Subscription: {
+    RideStatusSubscription: {
+      subscribe: withFilter(
+        (_, __, { pubSub }) => {
+          return pubSub.asyncIterator("rideUpdate");
+        },
+        async(payload, _, { context }) => {
+          const user: User = context.currentUser; //equal driver
+          const { 
+            RideStatusSubscription : { driverId, passengerId } 
+          } = payload;
+          return user.id === driverId || user.id === passengerId;
+        }
+      )
+    }
+  }
+}
+
+export default resolvers;
