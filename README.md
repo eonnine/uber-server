@@ -34,11 +34,11 @@ Project Uber Clone Server
 - [x] Subscribe to Nearby Drivers
 - [x] Request a Ride
 - [x] Get Nearby Ride Requests
-- Subscribe to Neadrby Ride Requests
-- Subscribe to Ride Status
-- Get Chat Room Messages
-- Subscribe to Chat Room Message
-- Send a Chat Messages
+- [x] Subscribe to Neadrby Ride Requests
+- [x] Subscribe to Ride Status
+- [x] Get Chat Room Messages
+- [x] Subscribe to Chat Room Message
+- [x] Send a Chat Messages
 
 ## Code Challenge:
 
