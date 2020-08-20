@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@types/mailgun-js": "^0.22.1",
-    "bcrypt": "^3.0.6",
+    "bcrypt": "^5.0.0",
     "class-validator": "^0.9.1",
     "cors": "^2.8.5",
     "dotenv": "^8.0.0",
